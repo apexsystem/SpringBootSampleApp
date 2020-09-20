@@ -9,23 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.customer.dal.entities.Customer;
 import com.demo.customer.service.CustomerService;
 
-import ch.qos.logback.classic.Logger;
-
 @RestController
 public class CustomerController {
 
 	@Autowired
 	CustomerService customerService;
 	
-
-	
 	@RequestMapping("/getAllCustomer")
-	public static List<Customer> getAllLocation()
+	public List<Customer> getAllLocation()
 	{
-		
 		System.out.println("Logging... Cusomer ");
-		Logger.debug("Logging Customer Data");
-		//return customerService.getAllCustomer();
+		System.out.println("Logging Customer Data"+customerService.getAllCustomer());
+		return customerService.getAllCustomer();
 	}
 	
 	
