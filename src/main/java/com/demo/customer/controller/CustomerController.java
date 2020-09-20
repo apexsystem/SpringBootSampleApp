@@ -19,6 +19,7 @@ public class CustomerController {
 	public List<Customer> getAllLocation()
 	{
 		System.out.println("Logging... Cusomer ");
+		System.out.println("Logging Customer Data"+customerService.getAllCustomer());
 		return customerService.getAllCustomer();
 	}
 	
