@@ -21,6 +21,7 @@ public class CustomerController {
 		System.out.println("Logging... Cusomer ");
 		System.out.println("Logging Customer Data"+customerService.getAllCustomer());
 		return customerService.getAllCustomer();
+		
 	}
 	
 	
